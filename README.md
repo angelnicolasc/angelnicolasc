@@ -1,16 +1,38 @@
-## Hi there 👋
+# Hey, I'm Nick 👋
 
-<!--
-**angelnicolasc/angelnicolasc** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🤖 **AI agent infrastructure builder** · 🎓 **B.S. CS · MBA Candidate** · 🚀 **Founder @ DrakoLabs**
 
-Here are some ideas to get you started:
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Rust](https://img.shields.io/badge/-Rust-000000?style=flat-square&logo=rust&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Swift](https://img.shields.io/badge/-Swift-FA7343?style=flat-square&logo=swift&logoColor=white)
+![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> Obsessed with one question: *what happens when an AI agent goes rogue, gets compromised, or just misbehaves at 3am in prod?* Building the answer.
+
+---
+
+## Projects
+
+- 🐉 **[Drako](https://github.com/DrakoLabs/drako)** — the security layer your AI agents are missing. Scans your codebase before you ship, enforces policy at runtime, and blocks bad tool calls before they execute. 97 deterministic rules, zero LLMs in the eval loop, <2ms overhead.
+  ```
+  pip install drako && drako scan .
+  ```
+
+---
+
+## What I'm Building Toward
+
+- **Agentic governance** — policy-as-code that travels with your agents, not bolted on after the fact
+- **Formal verification for autonomous systems** — making agent behavior provable, not just observable
+- **High-performance enforcement** — governance that runs in microseconds, not seconds
+
+---
+
+## GitHub Activity
+
+![GitHub Contribution Graph](https://ghchart.rshah.org/angelnicolasc)
