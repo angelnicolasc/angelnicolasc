@@ -22,6 +22,7 @@
   ```
   pip install drako && drako scan .
   ```
+- 🧠 **[Graymatter](https://github.com/angelnicolasc/graymatter)** — persistent memory layer for AI agents. Turns stateless agents into stateful ones with a single Go binary. Hybrid retrieval (vector + keyword + recency), ~90% token reduction after multiple sessions, works with Claude Code via MCP tools. Pure Go, zero infra, zero dependencies.
 
 ---
 
