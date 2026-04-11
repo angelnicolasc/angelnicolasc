@@ -35,8 +35,3 @@
 - **Formal verification for autonomous systems** — making agent behavior provable, not just observable
 - **High-performance enforcement** — governance that runs in microseconds, not seconds
 
----
-
-## GitHub Activity
-
-![GitHub Contribution Graph](https://ghchart.rshah.org/angelnicolasc)
