@@ -22,9 +22,8 @@
 ## Projects
 
 - 🐉 **[Drako](https://github.com/DrakoLabs/drako)** — the security layer your AI agents are missing. Scans your codebase before you ship, enforces policy at runtime, and blocks bad tool calls before they execute. 97 deterministic rules, zero LLMs in the eval loop, <2ms overhead.
-  ```
-  pip install drako && drako scan .
-  ```
+
+
 - 🧠 **[Graymatter](https://github.com/angelnicolasc/graymatter)** — persistent memory layer for AI agents. Turns stateless agents into stateful ones with a single Go binary. Hybrid retrieval (vector + keyword + recency), ~90% token reduction after multiple sessions, works with Claude Code via MCP tools. Pure Go, zero infra, zero dependencies.
 
 ---
