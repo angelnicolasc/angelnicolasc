@@ -1,6 +1,6 @@
 # Hey, I'm Nick 👋
 
-🤖 **AI agent infrastructure builder** · 🎓 **B.S. CS · MBA Candidate** · 🚀 **Founder @ DrakoLabs**
+🤖 **AI agent infrastructure builder** · 🎓 **B.S. CS · MBA Candidate** · 🚀 **Founder @DrakoLabs**
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
@@ -15,7 +15,7 @@
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
 
-> Obsessed with one question: *what happens when an AI agent goes rogue, gets compromised, or just misbehaves at 3am in prod?* Building the answer.
+> Obsessed with the unglamorous substrate that separates autonomous deployments from demos. Building the answer
 
 ---
 
@@ -24,13 +24,18 @@
 - 🐉 **[Drako](https://github.com/DrakoLabs/drako)** — the security layer your AI agents are missing. Scans your codebase before you ship, enforces policy at runtime, and blocks bad tool calls before they execute. 97 deterministic rules, zero LLMs in the eval loop, <2ms overhead.
 
 
-- 🧠 **[Graymatter](https://github.com/angelnicolasc/graymatter)** — persistent memory layer for AI agents. Turns stateless agents into stateful ones with a single Go binary. Hybrid retrieval (vector + keyword + recency), ~90% token reduction after multiple sessions, works with Claude Code via MCP tools. Pure Go, zero infra, zero dependencies.
+- 🧠 **[Graymatter](https://github.com/angelnicolasc/graymatter)** — persistent memory layer for AI agents. Turns stateless agents into stateful ones with a single Go binary. Hybrid retrieval (vector + keyword + recency), ~90% token reduction after a few sessions. Zero infra, zero dependencies—a true drop-in solution. Auto-wires with any vendor (Claude Code, Cursor, Codex, OpenCode, Antigravity) and any MCP-compatible client.
 
 ---
 
 ## What I'm Building Toward
 
-- **Agentic governance** — policy-as-code that travels with your agents, not bolted on after the fact
-- **Formal verification for autonomous systems** — making agent behavior provable, not just observable
-- **High-performance enforcement** — governance that runs in microseconds, not seconds
-
+- **Self-evolving harnesses** — FSM-driven mutation loops with snapshot-
+  backed rollback; systems that get better between runs, not between
+  deploys
+- **Agentic governance** — policy-as-code that travels with the agent,
+  enforced at the execution layer before the damage is done
+- **Formal verification for autonomous systems** — if you can't prove
+  what your agent won't do, you don't control it
+- **High-performance enforcement** — sub-millisecond policy evaluation
+  on hot paths; governance that doesn't make your agents slow
