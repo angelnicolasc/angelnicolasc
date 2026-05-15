@@ -26,6 +26,8 @@
 
 - 🧠 **[Graymatter](https://github.com/angelnicolasc/graymatter)** — persistent memory layer for AI agents. Turns stateless agents into stateful ones with a single Go binary. Hybrid retrieval (vector + keyword + recency), ~90% token reduction after a few sessions. Zero infra, zero dependencies—a true drop-in solution. Auto-wires with any vendor (Claude Code, Cursor, Codex, OpenCode, Antigravity) and any MCP-compatible client.
 
+- 🌐 **[Stratum](https://github.com/angelnicolasc/stratum)** — dual-tier LLM inference router for Gemma 4 on 16GB consumer GPUs. Zero-inference complexity scorer (6 dimensions, precompiled regexes) decides in <1ms whether a request goes to vLLM for speed or llama.cpp for quality, backed by live VRAM monitoring and adaptive latency SLA enforcement via EMA. Full model quality at fraction of the hardware cost.
+
 ---
 
 ## What I'm Building Toward
