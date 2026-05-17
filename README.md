@@ -30,13 +30,24 @@
 
 - 🌐 **[Stratum](https://github.com/angelnicolasc/stratum)** — dual-tier LLM inference router for Gemma 4 on 16GB consumer GPUs. Zero-inference complexity scorer (6 dimensions, precompiled regexes) decides in <1ms whether a request goes to vLLM for speed or llama.cpp for quality, backed by live VRAM monitoring and adaptive latency SLA enforcement via EMA. Full model quality at fraction of the hardware cost.
 
+- 🔬 **[Epica](https://github.com/angelnicolasc/epica)** — formal belief revision runtime for LLM agents, grounded in AGM postulates. Where other memory systems store contradictions silently, Epica resolves them: minimal contraction removes what must go, Noisy-OR propagates confidence causally, C=(P,I,G,R) contracts enforce policy before the agent acts. K*2-K*5 verified. T-ECE 0.07 < 0.08. MCP 2026 native. PyO3 SDK.
+
 ---
 
 ## What I'm Building Toward
 
-- **Agentic governance** — policy-as-code that travels with the agent,
-  enforced at the execution layer before the damage is done
-- **Formal verification for autonomous systems** — if you can't prove
-  what your agent won't do, you don't control it
-- **High-performance enforcement** — sub-millisecond policy evaluation
-  on hot paths; governance that doesn't make your agents slow
+- **Long-horizon drift as a typed invariant problem** — coherence is not 
+  correctness; agents drift silently over 100-step trajectories while 
+  sounding confident. I'm building CLT-based drift bounds enforced at the 
+  belief mutation layer, not as output-level checks that arrive too late.
+
+- **Causal failure attribution as infrastructure** — in multi-agent systems, 
+  every downstream confidence collapse has an upstream cause. I treat causal 
+  provenance as a first-class primitive: every belief revision needs a diff, 
+  every failure needs an attributable path back to the state that originated it.
+
+- **Formally bounded autonomy over formally verified outputs** — proving what 
+  an agent won't do matters more than guardrailing what it says. AGM revision 
+  semantics and typed behavioral contracts at the execution layer; enforcement 
+  that disappears into the runtime at sub-millisecond latency or it becomes 
+  a feature flag.
