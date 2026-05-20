@@ -32,6 +32,8 @@
 
 - 🔬 **[Epica](https://github.com/angelnicolasc/epica)** — formal belief revision runtime for LLM agents, grounded in AGM postulates. Where other memory systems store contradictions silently, Epica resolves them: minimal contraction removes what must go, Noisy-OR propagates confidence causally, C=(P,I,G,R) contracts enforce policy before the agent acts. K*2-K*5 verified. T-ECE 0.07 < 0.08. MCP 2026 native. PyO3 SDK.
 
+- 🧭 **[Meridian](https://github.com/angelnicolasc/meridian)** — phase-aware inference scheduler for reasoning models, grounded in recent EAT/RPDI research on reasoning termination. Reframes a single request as two workloads with opposite SLOs, then schedules them accordingly: output-first dual-queue dispatch, EAT/RPDI-gated </ think> forcing, three-tier KV eviction, and transport-agnostic disaggregated KV offload hooks. Rust core, PyO3-backed Python/vLLM integration, and a stock-vs-Meridian A/B harness centered on TTOT, output ITL, and user-visible degradation events.
+  
 ---
 
 ## What I'm Building Toward
