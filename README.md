@@ -24,6 +24,8 @@
 
 - 🧠 **[Graymatter](https://github.com/angelnicolasc/graymatter)** — persistent memory layer for AI agents. Turns stateless agents into stateful ones with a single Go binary. Hybrid retrieval (vector + keyword + recency), ~90% token reduction after a few sessions. Zero infra, zero dependencies—a true drop-in solution. Auto-wires with any vendor (Claude Code, Cursor, Codex, OpenCode, Antigravity) and any MCP-compatible client.
 
+- 🌌​ **[Tessera](https://github.com/angelnicolasc/tessera)** — KV-cache infrastructure for the post-PagedAttention era: built for DeepSeek-V4-style hybrid attention, million-token contexts, and the FP4/FP8 memory regimes where today’s LLM serving stacks start to break. It implements a Rust/Python, kernel-agnostic block manager with content-addressed sharing, MLA + per-layer hybrid layouts, V4-style ~2% KV accounting, state-cache arenas, filesystem-backed persistence, reserve-then-stream distributed semantics, PyO3 bindings, and dispatch paths that let FlashMLA/FlashInfer/vLLM-class kernels evolve without owning memory policy.
+  
 - ⚡ **[Forge](https://github.com/angelnicolasc/forge)** — Universal multi-agent harness. Adapts LangGraph, CrewAI, AutoGen (zero migration, auto-detected) with per-agent cost tracking, hybrid memory retrieval, observability, and self-evolution. 11 composable packages, zero framework lock-in.
 
 - 🌐 **[Stratum](https://github.com/angelnicolasc/stratum)** — dual-tier LLM inference router for Gemma 4 on 16GB consumer GPUs. Zero-inference complexity scorer (6 dimensions, precompiled regexes) decides in <1ms whether a request goes to vLLM for speed or llama.cpp for quality, backed by live VRAM monitoring and adaptive latency SLA enforcement via EMA. Full model quality at fraction of the hardware cost.
@@ -31,6 +33,8 @@
 - 🔬 **[Epica](https://github.com/angelnicolasc/epica)** — formal belief revision runtime for LLM agents, grounded in AGM postulates. Where other memory systems store contradictions silently, Epica resolves them: minimal contraction removes what must go, Noisy-OR propagates confidence causally, C=(P,I,G,R) contracts enforce policy before the agent acts. K*2-K*5 verified. T-ECE 0.07 < 0.08. MCP 2026 native. PyO3 SDK.
 
 - 🧭 **[Meridian](https://github.com/angelnicolasc/meridian)** — phase-aware inference scheduler for reasoning models, grounded in recent EAT/RPDI research on reasoning termination. Reframes a single request as two workloads with opposite SLOs, then schedules them accordingly: output-first dual-queue dispatch, EAT/RPDI-gated </ think> forcing, three-tier KV eviction, and transport-agnostic disaggregated KV offload hooks. Rust core, PyO3-backed Python/vLLM integration, and a stock-vs-Meridian A/B harness centered on TTOT, output ITL, and user-visible degradation events.
+
+
   
 ---
 
