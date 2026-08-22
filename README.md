@@ -35,23 +35,3 @@
 - 🧭 **[Meridian](https://github.com/angelnicolasc/meridian)** — phase-aware inference scheduler for reasoning models, grounded in recent EAT/RPDI research on reasoning termination. Reframes a single request as two workloads with opposite SLOs, then schedules them accordingly: output-first dual-queue dispatch, EAT/RPDI-gated </ think> forcing, three-tier KV eviction, and transport-agnostic disaggregated KV offload hooks. Rust core, PyO3-backed Python/vLLM integration, and a stock-vs-Meridian A/B harness centered on TTOT, output ITL, and user-visible degradation events.
 
 
-  
----
-
-## What I'm Building Toward
-
-- **Long-horizon drift as a typed invariant problem** — coherence is not 
-  correctness; agents drift silently over 100-step trajectories while 
-  sounding confident. I'm building CLT-based drift bounds enforced at the 
-  belief mutation layer, not as output-level checks that arrive too late.
-
-- **Causal failure attribution as infrastructure** — in multi-agent systems, 
-  every downstream confidence collapse has an upstream cause. I treat causal 
-  provenance as a first-class primitive: every belief revision needs a diff, 
-  every failure needs an attributable path back to the state that originated it.
-
-- **Formally bounded autonomy over formally verified outputs** — proving what 
-  an agent won't do matters more than guardrailing what it says. AGM revision 
-  semantics and typed behavioral contracts at the execution layer; enforcement 
-  that disappears into the runtime at sub-millisecond latency or it becomes 
-  a feature flag.
